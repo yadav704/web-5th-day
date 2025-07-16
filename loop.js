@@ -166,25 +166,37 @@
 // }
 // rev_string("madam")
 
+const prompt = require ("prompt-sync")({sigint: true})
+function add(a,b){
+    return(a+b)
+}
+function sub(a,b){
+    return(a-b)
+}
+function mult(a,b){
+    return(a*b)
+}
+function divide(a,b){
+    return(a/b)
+}
 
-// function add(a,b){
-//     console.log(a+b)
-// }
-// function sub(a,b){
-//     console.log(a-b)
-// }
-// function mult(a,b){
-//     console.log(a*b)
-// }
-// function divide(a,b){
-//     console.log(a/b)
-// }
-
-
-// add(5,5)
-// sub(8,4)
-// mult(2,4)
-// divide(9,3)
+while(true){
+    console.log("1.Add 2.Sub 3. Mult 4.Div")
+    userInput = parseInt(prompt("Enter yout choice: "))
+    if(userInput == 1){
+        console.log(add(5,5))
+    }
+     if(userInput == 2){
+        console.log(sub(8,4))
+    }
+     if(userInput == 3){
+        console.log(mult(2,4))
+    }
+     if(userInput == 4){
+        console.log(divide(9,3))
+    }
+    
+}
 
 // fucntion retrun
 
